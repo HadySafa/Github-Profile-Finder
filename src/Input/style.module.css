@@ -1,0 +1,84 @@
+:root {
+    --mainColor: #242424;
+    --secondaryColor: #eae0d5;
+    --thirdColor: #3B82F6;
+}
+
+.section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 50vw;
+}
+
+.form {
+    position: relative;
+    min-width: 100%;
+}
+
+.input {
+    min-height: 2.5rem;
+    max-height: 2.5rem;
+    min-width: 100%;
+    background-color: #3a3a3a;
+    color: var(--secondaryColor);
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: none;
+}
+
+.input:focus {
+    outline: 2px solid var(--thirdColor)
+}
+
+.button {
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 10%;
+    top: 0;
+    right: 5px;
+    min-height: 2.5rem;
+    max-height: 2.5rem;
+    background-color: inherit;
+    color: var(--secondaryColor);
+    font-size: 1.25rem;
+    cursor: pointer;
+}
+
+@media (min-width:400px) and (orientation:portrait) {
+    .form {
+        min-width: 80%;
+        max-width: 80%;
+    }
+
+    .input,
+    .button {
+        min-height: 3rem;
+        max-height: 3rem;
+    }
+}
+
+@media (min-width:700px) and (orientation:portrait) {
+    .form {
+        min-width: 75%;
+        max-width: 75%;
+    }
+}
+
+@media (min-width:600px) and (orientation:landscape) {
+
+    .form {
+        min-width: 70%;
+        max-width: 70%;
+    }
+
+    .input,
+    .button {
+        min-height: 3rem;
+        max-height: 3rem;
+    }
+
+}
